@@ -1,0 +1,7 @@
+--correlation- basically relation between date in month format and close price to know month wise trends. 
+
+
+select date_trunc('month', "Date") as year, AVG("Close Price" ) as avg_close_price
+from finance
+group by 1
+order by 1
